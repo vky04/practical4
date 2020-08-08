@@ -1,213 +1,879 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <style>
-        body{
-            margin: 0px;
-            padding: 0px;
-        }
-        
-    .main{
-        padding: 10px;
-        height: 1870px;
-        width: 800px;
-        border:5px solid lightgrey;
-    }
-    .head{
-        height: 50px;
-        width: 800px;
-        background-color: grey;
-        text-align: center;
-
-    }
-    .contain{
-        margin-top: 10px;
-        height: 600px;
-        width: 800px;
-        background-color: skyblue;
-    }
-    .avatar{
-        height: 200px;
-        width: 800px;
-
-
-    }
-    .a1{
-        margin-left: 20px;
-        margin-right: 20px;
-        height: 150px;
-        width: 150px;
-        float: left;
-        background-color: orange;
-        border-radius: 50%;
-    }
-    .a2{
-        margin-left: 20px;
-        margin-right: 20px;
-        height: 150px;
-        width: 150px;
-        float: left;
-        background-color: orange;
-        border-radius: 50%;
-    }
-    .a3{
-        margin-left: 20px;
-        margin-right: 20px;
-        height: 150px;
-        width: 150px;
-        float: left;
-        background-color: orange;
-        border-radius: 50%;
-    }
-    .a4{
-        margin-left: 20px;
-        margin-right: 20px;
-        height: 150px;
-        width: 150px;
-        float: left;
-        background-color: orange;
-        border-radius: 50%;
-    }
-    .m{
-        height: 500px;
-        width: 400px;
-        float: left;
-        background-color: grey;
-    }
-
-    .rap{
-        display: block;
-        height: 500px;
-        width: 400px;
-        float: right;
-        
-    }
-    .l1{
-        margin: 8px;
-        margin-top: 0px;
-        height: 161px;
-        width: 400px;
-        background-color:darkgoldenrod
-    }
-    .l2{
-        margin: 8px;
-        height: 161px;
-        width: 400px;
-        background-color:darkgoldenrod
-    }
-    .l3{
-        margin: 8px;
-        margin-bottom: 0px;
-        height: 161px;
-        width: 400px;
-        background-color:darkgoldenrod
-    }
-    .b1{
-        margin-left: 20px;
-        margin-right: 20px;
-        height: 200px;
-        width: 150px;
-        float: left;
-        background-color: red
-
-
-    }
-    .b2{
-        margin-left: 20px;
-        margin-right: 20px;
-        height: 200px;
-        width: 150px;
-        float: left;
-        background-color: red
-
-
-    }
-    .b3{
-        margin-left: 20px;
-        margin-right: 20px;
-        height: 200px;
-        width: 150px;
-        float: left;
-        background-color: red
-
-
-    }
-    .b4{
-        margin-left: 20px;
-        margin-right: 20px;
-        height: 200px;
-        width: 150px;
-        float: left;
-        background-color: red
-
-    }
-    .ans{
-        height: 100px;
-        width: 800px;
-        margin-bottom: 8px;
-        margin-top: 6px;
-        background-color: pink;
-    }
-
-    </style>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Practical-7</title>
+    <style>
+        /* Applying CSS on the container */
+        * {
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+        #container {
+            padding: 15px;
+            width: 1200px;
+            margin: 0px auto;
+        }
+        #container:hover {
+            box-shadow: 0 8px 15px 0 rgba(0,0,0,0.5);
+        }
+
+        /*********************************************** 1. 1201 or more **********************************************/
+        @media (min-width: 1201px) {
+
+            /*Header*/
+            #header {
+                background-color: grey;
+                height: 70px;
+                margin-bottom: 15px;
+                border-radius: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 40px;
+                color: white;
+            }
+
+            /*Banner*/
+            #banner {
+                background-color: lightblue;
+                height: 300px;
+                margin-bottom: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 40px;
+                color: white;
+            }
+
+            /*Content-1*/
+            #content1 {
+
+            }
+            #content1::after {
+                content: '';
+                display: block;
+                clear: both;
+            }
+            #temp1, #temp2, #temp3, #temp4 {
+                height: 200px;
+                width: 200px;
+                background-color: goldenrod;
+                border-radius: 50%;
+                display: inline-block;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                margin-left: 20px;
+                margin-right: 20px;
+                padding: 20px;
+                justify-content: center;
+                align-items: center;
+            }
+
+            /*Content-2*/
+            #content2 {
+
+            }
+            #content2::after {
+                content: '';
+                display: block;
+                clear: both;
+            }
+            #left-sidebar {
+                margin-top: 15px;
+                margin-bottom: 15px;
+                width: 60%;
+                height: 600px;
+                float: left;
+                background-color: grey;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 40px;
+                color: white;
+            }
+            #right-sidebar {
+                width: 38%;
+                float: right;
+                display: flex;
+                flex-direction: column;
+            }
+            #art1 {
+                order: 1;
+                width: 100%;
+                height: 180px;
+                background-color: chocolate;
+                margin-top: 15px;
+                margin-bottom: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 40px;
+                color: white;
+            }
+            #art2 {
+                order: 2;
+                width: 100%;
+                height: 180px;
+                background-color: chocolate;
+                margin-top: 15px;
+                margin-bottom: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 40px;
+                color: white;
+            }
+            #art3 {
+                order: 3;
+                width: 100%;
+                height: 180px;
+                background-color: chocolate;
+                margin-top: 15px;
+                margin-bottom: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 40px;
+                color: white;
+            }
+
+            /*Content-3*/
+            #content3 {
+
+            }
+            #content3::after {
+                content: '';
+                display: block;
+                clear: both;
+            }
+            #blank1, #blank2, #blank3, #blank4 {
+                height: 200px;
+                width: 200px;
+                background-color: orangered;
+                display: inline-block;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                margin-left: 20px;
+                margin-right: 20px;
+                padding: 20px;
+                justify-content: center;
+                align-items: center;
+            }
+
+            /*Footer*/
+            #footer {
+                background-color: plum;
+                height: 70px;
+                margin-top: 15px;
+                border-radius: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 40px;
+                color: white;
+            }
+
+        }
+        /**************************************************************************************************************/
+
+
+
+        /*********************************************** 2. 1025 to 1200 **********************************************/
+        @media (min-width: 1025px) and (max-width: 1200px) {
+
+            /*Header*/
+            #header {
+                background-color: grey;
+                height: 70px;
+                margin-bottom: 15px;
+                border-radius: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 40px;
+                color: white;
+            }
+
+            /*Banner*/
+            #banner {
+                background-color: lightblue;
+                height: 300px;
+                margin-bottom: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 40px;
+                color: white;
+            }
+
+            /*Content-1*/
+            #content1{
+
+            }
+            #content1::after {
+                content: '';
+                display: block;
+                clear: both;
+            }
+            #temp1, #temp2, #temp3, #temp4 {
+                height: 200px;
+                width: 200px;
+                background-color: goldenrod;
+                border-radius: 50%;
+                display: inline-block;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                margin-left: 20px;
+                margin-right: 20px;
+                padding: 20px;
+                justify-content: center;
+                align-items: center;
+            }
+
+            /*Content-2*/
+            #content2{
+
+            }
+            #content2::after {
+                content: '';
+                display: block;
+                clear: both;
+            }
+            #left-sidebar {
+                margin-top: 15px;
+                margin-bottom: 15px;
+                width: 60%;
+                height: 600px;
+                float: left;
+                background-color: grey;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 40px;
+                color: white;
+            }
+            #right-sidebar {
+                width: 38%;
+                float: right;
+                display: flex;
+                flex-direction: column;
+            }
+            #art1 {
+                order: 3;
+                width: 100%;
+                height: 180px;
+                background-color: chocolate;
+                margin-top: 15px;
+                margin-bottom: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 40px;
+                color: white;
+            }
+            #art2 {
+                order: 2;
+                width: 100%;
+                height: 180px;
+                background-color: chocolate;
+                margin-top: 15px;
+                margin-bottom: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 40px;
+                color: white;
+            }
+            #art3 {
+                order: 1;
+                width: 100%;
+                height: 180px;
+                background-color: chocolate;
+                margin-top: 15px;
+                margin-bottom: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 40px;
+                color: white;
+            }
+
+            /*Content-3*/
+            #content3 {
+
+            }
+            #content3::after {
+                content: '';
+                display: block;
+                clear: both;
+            }
+            #blank1, #blank2, #blank3, #blank4 {
+                height: 200px;
+                width: 200px;
+                background-color: orangered;
+                display: inline-block;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                margin-left: 20px;
+                margin-right: 20px;
+                padding: 20px;
+                justify-content: center;
+                align-items: center;
+            }
+
+            /*Footer*/
+            #footer {
+                background-color: plum;
+                height: 70px;
+                margin-top: 15px;
+                border-radius: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 40px;
+                color: white;
+            }
+
+        }
+        /**************************************************************************************************************/
+
+
+
+
+        /*********************************************** 3. 769 to 1024 ***********************************************/
+        @media (min-width: 769px) and (max-width: 1024px) {
+
+            /*Header*/
+            #header {
+                background-color: grey;
+                height: 70px;
+                margin-bottom: 15px;
+                border-radius: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 40px;
+                color: white;
+            }
+
+            /*Banner*/
+            #banner {
+                background-color: lightblue;
+                height: 300px;
+                margin-bottom: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 40px;
+                color: white;
+            }
+
+            /*Content-1*/
+            #content1 {
+
+            }
+            #content1::after {
+                content: '';
+                display: block;
+                clear: both;
+            }
+            #temp1, #temp2, #temp3, #temp4 {
+                height: 200px;
+                width: 200px;
+                background-color: goldenrod;
+                border-radius: 50%;
+                display: inline-block;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                margin-left: 20px;
+                margin-right: 20px;
+                padding: 20px;
+                justify-content: center;
+                align-items: center;
+            }
+
+            /*Content-2*/
+            #content2 {
+
+            }
+            #content2::after {
+                content: '';
+                display: block;
+                clear: both;
+            }
+            #left-sidebar {
+                margin-top: 15px;
+                margin-bottom: 15px;
+                width: 60%;
+                height: 600px;
+                float: left;
+                background-color: grey;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 40px;
+                color: white;
+            }
+            #right-sidebar {
+                width: 38%;
+                float: right;
+                display: flex;
+                flex-direction: column;
+            }
+            #art1 {
+                order: 1;
+                width: 100%;
+                height: 280px;
+                background-color: chocolate;
+                margin-top: 15px;
+                margin-bottom: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 40px;
+                color: white;
+            }
+            #art2 {
+                order: 2;
+                width: 100%;
+                height: 280px;
+                background-color: chocolate;
+                margin-top: 15px;
+                margin-bottom: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 40px;
+                color: white;
+            }
+            #art3 {
+                display: none;
+            }
+
+            /*Content-3*/
+            #content3 {
+
+            }
+            #content3::after {
+                content: '';
+                display: block;
+                clear: both;
+            }
+            #blank1, #blank2, #blank3, #blank4 {
+                height: 200px;
+                width: 200px;
+                background-color: orangered;
+                display: inline-block;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                margin-left: 20px;
+                margin-right: 20px;
+                padding: 20px;
+                justify-content: center;
+                align-items: center;
+            }
+
+            /*Footer*/
+            #footer {
+                background-color: plum;
+                height: 70px;
+                margin-top: 15px;
+                border-radius: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 40px;
+                color: white;
+            }
+
+        }
+        /**************************************************************************************************************/
+
+
+
+        /*********************************************** 4. 481 tp 768 ************************************************/
+        @media (min-width: 481px) and (max-width: 768px) {
+
+            /*Header*/
+            #header {
+                background-color: grey;
+                height: 70px;
+                margin-bottom: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 40px;
+                color: white;
+            }
+
+            /*Banner*/
+            #banner {
+                background-color: lightblue;
+                height: 300px;
+                margin-bottom: 15px;
+                border-radius: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 40px;
+                color: white;
+            }
+
+            /*Content-1*/
+            #content1 {
+
+            }
+            #content1::after {
+                content: '';
+                display: block;
+                clear: both;
+            }
+            #temp1, #temp2, #temp3, #temp4 {
+                height: 200px;
+                width: 200px;
+                background-color: goldenrod;
+                border-radius: 50%;
+                display: inline-block;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                margin-left: 20px;
+                margin-right: 20px;
+                padding: 20px;
+                justify-content: center;
+                align-items: center;
+            }
+
+            /*Content-2*/
+            #content2 {
+                display: flex;
+                flex-direction: column;
+            }
+            #left-sidebar {
+                order: 1;
+                width: 100%;
+                height: 500px;
+                background-color: grey;
+                border-radius: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 40px;
+                color: white;
+                margin-bottom: 15px;
+            }
+            #right-sidebar::after {
+                content: '';
+                display: block;
+                clear: both;
+            }
+            #right-sidebar {
+                order: 2;
+                width: 100%;
+            }
+            #art1 {
+                order: 1;
+                width: 30%;
+                float: left;
+                height: 80px;
+                background-color: chocolate;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 40px;
+                color: white;
+                margin-right: 60px;
+                margin-bottom: 15px;
+            }
+            #art2 {
+                order: 2;
+                width: 30%;
+                float: left;
+                height: 80px;
+                background-color: chocolate;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 40px;
+                color: white;
+                margin-bottom: 15px;
+            }
+            #art3 {
+                order: 3;
+                width: 30%;
+                float: right;
+                height: 80px;
+                background-color: chocolate;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 40px;
+                color: white;
+                margin-bottom: 15px;
+            }
+
+            /*Content-3*/
+            #content3 {
+
+            }
+            #content3::after {
+                content: '';
+                display: block;
+                clear: both;
+            }
+            #blank1, #blank2, #blank3, #blank4 {
+                height: 200px;
+                width: 200px;
+                background-color: orangered;
+                display: inline-block;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                margin-left: 20px;
+                margin-right: 20px;
+                padding: 20px;
+                justify-content: center;
+                align-items: center;
+            }
+
+            /*Footer*/
+            #footer {
+                background-color: plum;
+                height: 70px;
+                margin-top: 15px;
+                border-radius: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 40px;
+                color: white;
+            }
+
+        }
+        /**************************************************************************************************************/
+
+
+
+        /*********************************************** 5. 480 or less ***********************************************/
+        @media (max-width: 480px) {
+
+            /*Header*/
+            #header {
+                background-color: grey;
+                height: 70px;
+                margin-bottom: 15px;
+                border-radius: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 40px;
+                color: white;
+            }
+
+            /*Banner*/
+            #banner {
+                background-color: lightblue;
+                height: 300px;
+                margin-bottom: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 40px;
+                color: white;
+            }
+
+            /*Content-1*/
+            #content1 {
+
+            }
+            #content1::after {
+                content: '';
+                display: block;
+                clear: both;
+            }
+            #temp1, #temp2, #temp3, #temp4 {
+                height: 200px;
+                width: 200px;
+                background-color: goldenrod;
+                border-radius: 50%;
+                display: inline-block;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                margin-left: 20px;
+                margin-right: 20px;
+                padding: 20px;
+                justify-content: center;
+                align-items: center;
+            }
+
+            /*Content-2*/
+            #content2 {
+                display: flex;
+                flex-direction: column;
+            }
+            #left-sidebar {
+                order: 1;
+                width: 100%;
+                height: 300px;
+                background-color: grey;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 40px;
+                color: white;
+                margin-bottom: 15px;
+            }
+            #right-sidebar::after {
+                content: '';
+                display: block;
+                clear: both;
+            }
+            #right-sidebar {
+                order: 2;
+                width: 100%;
+            }
+            #art1 {
+                order: 1;
+                width: 100%;
+                height: 100px;
+                background-color: chocolate;
+                margin-bottom: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 40px;
+                color: white;
+            }
+            #art2 {
+                order: 2;
+                width: 100%;
+                height: 100px;
+                background-color: chocolate;
+                margin-bottom: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 40px;
+                color: white;
+            }
+            #art3 {
+                order: 3;
+                width: 100%;
+                height: 100px;
+                background-color: chocolate;
+                margin-bottom: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 40px;
+                color: white;
+            }
+
+
+            /*Content-3*/
+            #content3 {
+
+            }
+            #content3::after {
+                content: '';
+                display: block;
+                clear: both;
+            }
+            #blank1, #blank2, #blank3, #blank4 {
+                height: 200px;
+                width: 200px;
+                background-color: orangered;
+                display: inline-block;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                margin-left: 20px;
+                margin-right: 20px;
+                padding: 20px;
+                justify-content: center;
+                align-items: center;
+            }
+
+            /*Footer*/
+            #footer {
+                background-color: plum;
+                height: 70px;
+                margin-top: 15px;
+                border-radius: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 40px;
+                color: white;
+            }
+
+        }
+        /**************************************************************************************************************/
+
+    </style>
 </head>
 <body>
-    <div class="main">
-        <div class="head">
-            <h2 style="padding: 15px; margin: 0px;color: white;"> Header </h2>
-        </div>
-        <div class="contain">
-            <h2 style="padding: 290px; margin: 0px;color: white;"> Banner</h2>
+    <!--Container-->
+    <div id="container">
 
+        <!--Header-->
+        <div id="header">Header</div>
 
-        </div>
-        <div class="avatar">
-            <h1 style="text-align: center;"> Section-1</h1>
-            <div class="circle">
-                <div class="a1"></div>
-                <div class="a2"></div>
-                <div class="a3"></div>
-                <div class="a4"></div>
-            </div>
-        </div>
-        <div class="sec2">
-            <h1 style="text-align: center;">Section-2</h1>
-            <div class="m">
-                <h2 style="padding: 150px; margin: 0px;color: white;text-align: center;"> main content </h2>
-            </div>
-            <div class="rap">
-            <div class="l1">
-                <h2 style="padding: 50px; margin: 0px;color: white;text-align: center;"> Article-1 </h2>
-            </div>
-            <div class="l2">
-                <h2 style="padding: 50px; margin: 0px;color: white;text-align: center;"> Article-2 </h2>
-            </div>
-            <div class="l3">
-                <h2 style="padding: 50px; margin: 0px;color: white;text-align: center;"> Article-3 </h2>
-            </div>
-            </div>
-        </div>
-        <div class="sec3">
-            <h1 style="text-align: center;">Section-3</h1>
-            <div class="b1"></div>
-            <div class="b2"></div>
-            <div class="b3"></div>
-            <div class="b4"></div>
+        <!--Banner-->
+        <div id="banner">Banner</div>
 
-
+        <!--Section-1-->
+        <div id="content1">
+            <!--Heading for Section-1-->
+            <h1>Section-1</h1>
+            <!--temp1-->
+            <div id="temp1"></div>
+            <!--temp2-->
+            <div id="temp2"></div>
+            <!--temp3-->
+            <div id="temp3"></div>
+            <!--temp4-->
+            <div id="temp4"></div>
         </div>
-        <div class="sec4">
-            <h1 style="text-align: center; margin: 4px;">Section-4</h1>
-            <div class="ans">
-                <h2 style="padding: 40px; margin: 0px;color: white;text-align: center;"> Footer </h2>
-                
 
+        <!--Section-2-->
+        <div id="content2">
+            <!--Heading for Section-2-->
+            <h1>Section-2</h1>
+            <!--Left sidebar-->
+            <div id="left-sidebar">Main Content</div>
+            <!--Right sidebar-->
+            <div id="right-sidebar">
+                <!--Article-1-->
+                <div id="art1">Article-1</div>
+                <!--Article-2-->
+                <div id="art2">Article-2</div>
+                <!--Article-3-->
+                <div id="art3">Article-3</div>
             </div>
-            
         </div>
+
+        <!--Section-3-->
+        <div id="content3">
+            <!--Heading for Section-3-->
+            <h1>Section-3</h1>
+            <!--Blank-1-->
+            <div id="blank1"></div>
+            <!--Blank-2-->
+            <div id="blank2"></div>
+            <!--Blank-3-->
+            <div id="blank3"></div>
+            <!--Blank-4-->
+            <div id="blank4"></div>
+        </div>
+
+        <!--Section-4-->
+        <!--Heading for Section-4-->
+        <h1>Section-4</h1>
+        <!--Footer-->
+        <div id="footer">Footer</div>
 
     </div>
 </body>
