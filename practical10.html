@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment10</title>
+    <style>
+         *{
+             padding: 0;
+             margin: 0;
+             box-sizing: border-box;
+             font-family: Arial, Helvetica, sans-serif;
+    
+         }
+         .header{
+             width: 100%;
+             height: 70px;
+             background-color: #2f3640;
+             align-items: center; 
+             justify-content: center;
+             margin: 0%;
+             padding: 0%;
+
+         }
+         .header h1{
+             background-color: cornsilk;
+
+         }
+         .content{
+             width: 100%;
+
+         }
+         .content img{
+             width: 100%;
+             max-width: 700px;
+             display: block;
+             margin: auto;
+         }
+         .content p{
+             text-align: justify;
+             font-size: 10px;
+         }
+         .sidebar{
+             width: 20%;
+             height: 100% ;
+             position: fixed;
+             top: 70px;
+             background-color: #353b48;
+             left: -100%
+
+         }
+         .sidebar ul{
+             list-style: none;
+
+         }
+         .sidebar ul li{
+             border-bottom: 2px solid rgba(255,255,255);
+         }
+         .sidebar ul li a{
+             display: block;
+             text-decoration:none;
+             color: white;
+             font-size: 20px;
+             font-family: Arial, Helvetica, sans-serif;
+             padding: 15px,25px;
+         }
+         a i{
+             margin: 20px;
+         }
+         .sidebar ul li a:hover{
+             border-left:4px solid white;
+         }
+         .show-btn,hide-btn{
+             font-size: 30px;
+             color: white;
+             position: fixed;
+             top: 30px;
+             left: 50px;
+         }
+         hide-btn{
+             opacity: 0;
+         }
+         #chk:checked ~ .sidebar{
+             left:0;
+         }
+         #chk:checked ~ .show-btn{
+             opacity: 0;
+         }
+         #chk:checked ~ .hide-btn{
+             opacity: 1;
+         }
+         #chk:checked ~ .content{
+             width: 80%;
+         }
+         @media (max-width: 768px){
+             .sidebar{
+                 width: 100%;
+             }
+             
+         }
+    </style>
+</head>
+<body>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <div class="header">
+    </div>
+    <input type="checkbox" name="" id="chk" />
+    <label for="chk" class="show-btn">
+        <i class="fa fa-bars"></i>
+
+    </label>
+    <label for="chk" class="hide-btn">
+        <i class="fa fa-times"></i>
+
+    </label>
+    <div class="content"></div>
+    <img src="images/mainb4.jpg" alt="">
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis provident quaerat enim aut amet ullam dignissimos, fuga a, obcaecati, expedita illo aliquam. Aliquid fuga at magni consequatur ab minus iste?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum voluptatem expedita at nostrum quis excepturi ipsam ex quas, rem neque illum, minus voluptatibus? Quae ipsa similique voluptatum maxime reprehenderit sequi amet exercitationem nihil vero, dolorum aspernatur ipsum magni quis atque est nostrum autem dignissimos animi praesentium odit optio commodi. Illo nemo quibusdam repellendus voluptate fugit suscipit temporibus dolorum, exercitationem assumenda nam harum. Quis nostrum, perspiciatis numquam odit magni nisi harum rem, voluptatibus nobis temporibus ea quod corporis laudantium! Odit molestiae beatae architecto culpa repudiandae, sunt repellendus impedit commodi. Dolor quas soluta atque. Fuga sapiente veritatis aspernatur. Cum odit, dicta nobis quo aperiam magni. Culpa quis animi repellat corrupti nulla incidunt consectetur laudantium! Repellat aperiam hic voluptatum eligendi, exercitationem, itaque numquam fugiat inventore, porro quos eum vitae eaque quo. Excepturi aut, accusamus, deserunt repellat quisquam aperiam rerum aspernatur facere obcaecati blanditiis, eveniet magnam similique? Vitae perferendis accusamus pariatur repudiandae iste deserunt earum non nostrum minima facilis laudantium saepe, velit explicabo molestiae neque quas et perspiciatis consequatur inventore! Dicta ex distinctio non iste doloribus incidunt veniam! Totam suscipit, voluptatum nostrum assumenda eos nesciunt sint, quod explicabo reprehenderit quasi facere sequi alias aut sapiente libero? Consectetur, culpa incidunt magni sequi facere et nulla!</p>
+    <div class="sidebar">
+        <ul>
+            <li><a href="#"  ><i  class="fa fa-home"><span style="margin-left:15px;">Home</span></i></a></li>
+            <li><a href="#"><i class="fa fa-user"></i><span>About us</span></a></li>
+            <li><a href="#"><i class="fa fa-tasks"></i><span>Services</span></a></li>
+            <li><a href="#"><i class="fa fa-rss"></i><span>Blog</span></a></li>
+            <li><a href="#"><i class="fa fa-id-card"></i><span>Contact</span></a></li>
+
+        </ul>
+    </div>
+</body>
+</html>
