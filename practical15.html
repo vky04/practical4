@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COUNTER</title>
+    <style>
+        *{
+            position: relative;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: grey;
+        }
+        div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            min-height: 30vh;
+            background-color: grey;
+        }
+        button{
+            height: 50px;
+            width: 50px;
+            font-size: 40px;
+            outline: none;
+            background-color: yellow;
+
+        }
+        input{
+            border-radius: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            height: 50px;
+            width: 60px;
+            outline: none;
+            margin: 30px;
+            background-color: grey;
+            color: yellow;
+            border: none;
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: white; font-size: 40px; text-align: center;"> COUNTER</h1>
+    <div>
+    <button id="negative" style="margin-left: 32px;">-</button>
+    <input type="number" id="num" readonly value="0">
+    <button id="positive" style="margin-left:0px;">+</button>
+    </div>
+    <script type="text/javascript">
+    let add = document.querySelector("#positive")
+    let minus = document.querySelector("#negative")
+    let num= document.querySelector("#num")
+    add.addEventListener('click',()=>{
+        if(num.value>=0){
+            minus.disabled=false;
+        }
+        if(num.value>=98){
+            add.disabled=true;
+            alert("sorry developer set limit to 99 :(");
+        }
+
+        num.value= parseInt(num.value)+1;
+
+    });
+    minus.addEventListener('click',()=>{
+        if(num.value==0){
+            minus.disabled=true;s
+        }
+        if(num.value<=99){
+            add.disabled=false;
+        }
+        num.value= parseInt(num.value)-1;
+
+    });
+
+
+    </script>
+</body>
+</html>
